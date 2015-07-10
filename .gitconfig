@@ -1,0 +1,27 @@
+[push]
+	default = simple
+
+[color]
+	ui          = true
+	branch      = auto
+	diff        = auto
+	interactive = auto
+	status      = auto
+
+[color "status"]
+	header		= normal
+	added		= green
+	updated		= cyan
+	changed		= yellow
+	untracked	= red
+	nobranch	= red
+	branch		= normal bold
+
+[alias]
+	lg = log --graph --all --format='%C(auto)%h%d %C(auto,bold black)<%C(reset)%C(auto,blue)%aE%C(auto,bold black)>%C(reset) %s %C(auto,bold black)(%C(reset)%C(auto,green)%ar%C(auto,bold black))%C(reset)'
+
+[credential]
+	helper = cache --timeout=3600
+
+[include]
+	path = ~/.gitconfig.local
